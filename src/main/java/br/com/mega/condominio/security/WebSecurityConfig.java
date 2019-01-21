@@ -23,8 +23,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter{
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
 	    http.authorizeRequests()
-	        //.antMatchers("/produtos/form").hasRole("ADMIN")//proprio spring já aciona "HOLE_", ficando HOLE_ADMIN
-	        //.antMatchers("/").permitAll()
+	        .antMatchers("/").permitAll()//proprio spring já aciona "HOLE_", ficando HOLE_ADMIN
 	        .anyRequest().authenticated()
 	        .and().formLogin().loginPage("/entrar")
 	            .defaultSuccessUrl("/").permitAll()
