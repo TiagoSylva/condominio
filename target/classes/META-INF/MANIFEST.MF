@@ -1,9 +1,9 @@
 Manifest-Version: 1.0
 Implementation-Title: condominio
 Implementation-Version: 0.0.1-SNAPSHOT
-Built-By: Augusto
+Built-By: TiagoSilva
 Implementation-Vendor-Id: br.com.mega
-Build-Jdk: 1.8.0_191
+Build-Jdk: 1.8.0_162
 Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
  ot-starter-parent/condominio
 Created-By: Maven Integration for Eclipse

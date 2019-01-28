@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity4">
+<head>
+<meta charset="UTF-8">
+<title>Cadastro de Morador</title>
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+
+	<div class="container-fluid">
+		<div class="shadow p-3 mb-5 bg-white rounded">
+
+			<div class="container-fluid">
+				<div class="shadow p-3 mb-5 bg-white rounded">
+					<h1 class="text-center">CADASTRO DE MORADOR</h1>
+				</div>
+			</div>
+
+			<div class="container-fluid">
+				<div class="shadow p-3 mb-5 bg-white rounded">
+					<div class="container-fluid">
+						<div class="row">
+							<form>
+								<div class="form-group">
+									<label for="inputAddress">Nome</label> <input type="text"
+										class="form-control" id="inputNome"
+										placeholder="Digite o nome">
+								</div>
+
+								<div class="form-check form-check-inline">
+									<input class="form-check-input" type="checkbox"
+										id="inlineCheckbox1" value="option1"> <label
+										class="form-check-label" for="inlineCheckbox1">Masculino</label>
+								</div>
+								<div class="form-check form-check-inline">
+									<input class="form-check-input" type="checkbox"
+										id="inlineCheckbox2" value="option2"> <label
+										class="form-check-label" for="inlineCheckbox2">Feminino</label>
+								</div>
+
+								<div class="form-row">
+									<div class="form-group col-md-6">
+										<label for="inputCpf">CPF</label> <input type="number"
+											class="form-control" id="inputCpf" placeholder="Digite o CPF">
+									</div>
+									<div class="form-group col-md-6">
+										<label for="inputRg">RG</label> <input type="text"
+											class="form-control" id="inputRg" placeholder="Digite o RG">
+									</div>
+								</div>
+
+								<div class="form-row">
+									<div class="form-group col-md-6">
+										<label for="inputBloco">Bloco</label> <input type="text"
+											class="form-control" id="inputBloco"
+											placeholder="Digite o bloco do morador">
+									</div>
+									<div class="form-group col-md-6">
+										<label for="inputPredio">Predio</label> <input type="text"
+											class="form-control" id="inputPredio"
+											placeholder="Digite o nome do Predio do morador">
+									</div>
+									<div class="form-group col-md-6">
+										<label for="inputApartamento">Apartamento</label> <input
+											type="text" class="form-control" id="inputApartamento"
+											placeholder="Digite o bloco do Apartamento">
+									</div>
+								</div>
+
+								<div class="form-group">
+									<label for="exampleFormControlInput1">Email</label> <input
+										type="email" class="form-control"
+										id="exampleFormControlInput1" placeholder="name@example.com">
+								</div>
+
+								<div class="form-group row">
+									<button type="submit" class="btn btn-sm btn-primary">Salvar</button>
+									<a th:href="@{/}" class="btn btn-sm btn-default">Cancelar</a>
+									<button type="submit" class="btn btn-sm btn-primary">Excluir</button>
+								</div>
+
+							</form>
+						</div>
+
+					</div>
+
+
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

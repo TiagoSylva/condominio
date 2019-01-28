@@ -1,97 +1,136 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity4">
-	<head>
-		<meta charset="UTF-8">
-		<title>Sistema de Condomínios</title>
-		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-	</head>
-	<body>
-		<div class="container-fluid">   
-	    	<div class="shadow p-3 mb-5 bg-white rounded">
-	    	
-	    		<div class="container-fluid">   
-	    			<div class="shadow p-3 mb-5 bg-white rounded">
-	    				<h1 class="text-center">SISTEMA DE CONDOMÍNIO</h1>
-	    			</div>	    			
-    			</div>
-    			
-    			<div class="container-fluid">   
-	    			<div class="shadow p-3 mb-5 bg-white rounded">
-	    				<div class="container-fluid">
-							<div class="row">
-								<div class="col-md-3">
-									<div class="card" style="width: 18rem;">
-									  	<img class="card-img-top" src=".../static/images/user.png" alt="">
-									  	<div class="card-body mx-auto">
-										    <a href="#" class="btn btn-primary btn-lg">Funcionários</a>
-									  	</div>
-									</div>
-								</div>
-								<div class="col-md-3">
-									<div class="card" style="width: 18rem;">
-									  	<img class="card-img-top" src=".../static/images/user.png" alt="">
-									  	<div class="card-body mx-auto">
-										    <a href="#" class="btn btn-primary btn-lg">botão</a>
-									  	</div>
-									</div>
-								</div>
-								<div class="col-md-3">
-									<div class="card" style="width: 18rem;">
-									  	<img class="card-img-top" src=".../static/images/user.png" alt="">
-									  	<div class="card-body mx-auto">
-										    <a href="#" class="btn btn-primary btn-lg">botão</a>
-									  	</div>
-									</div>
-								</div>
-								<div class="col-md-3">
-									<div class="card" style="width: 18rem;">
-									  	<img class="card-img-top" src=".../static/images/user.png" alt="">
-									  	<div class="card-body mx-auto">
-										    <a href="#" class="btn btn-primary btn-lg">botão</a>
-									  	</div>
-									</div>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity4">
+<head>
+<meta charset="UTF-8">
+<title>Sistema de Condomínios</title>
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="shadow p-3 mb-5 bg-white rounded">
+
+			<div class="container-fluid">
+				<div class="shadow p-3 mb-5 bg-white rounded">
+					<h1 class="text-center">SISTEMA DE CONDOMÍNIO</h1>
+				</div>
+			</div>
+
+			<div class="container-fluid">
+				<div class="shadow p-3 mb-5 bg-white rounded">
+					<div class="container-fluid">
+						<div class="row">
+
+							<div class="card" style="width: 18rem;">
+								<img src="src/main/resources/static/images/carro.jpg"
+									class="card-img-top" alt="...">
+								<div class="card-body">
+									<h5 class="card-title">Usuario</h5>
+									<p class="card-text">Clique no botão para mostrar as informações.</p>
+									<a href="condominio/veiculo.html" class="btn btn-primary">usuario</a>
 								</div>
 							</div>
-							<p><p>
-							<div class="row">
-								<div class="col-md-3">
-									<div class="card" style="width: 18rem;">
-									  	<img class="card-img-top" src=".../static/images/user.png" alt="">
-									  	<div class="card-body mx-auto">
-										    <a href="#" class="btn btn-primary btn-lg">botão</a>
-									  	</div>
-									</div>
-								</div>
-								<div class="col-md-3">
-									<div class="card" style="width: 18rem;">
-									  	<img class="card-img-top" src=".../static/images/user.png" alt="">
-									  	<div class="card-body mx-auto">
-										    <a href="#" class="btn btn-primary btn-lg">botão</a>
-									  	</div>
-									</div>
-								</div>
-								<div class="col-md-3">
-									<div class="card" style="width: 18rem;">
-									  	<img class="card-img-top" src=".../static/images/user.png" alt="">
-									  	<div class="card-body mx-auto">
-										    <a href="#" class="btn btn-primary btn-lg">botão</a>
-									  	</div>
-									</div>
-								</div>
-								<div class="col-md-3">
-									<div class="card" style="width: 18rem;">
-									  	<img class="card-img-top" src=".../static/images/user.png" alt="">
-									  	<div class="card-body mx-auto">
-										    <a href="#" class="btn btn-primary btn-lg">botão</a>
-									  	</div>
-									</div>
+
+							<div class="card" style="width: 18rem;">
+								<img src=".../static/images/carro.jpg" class="card-img-top"
+									alt="...">
+								<div class="card-body">
+									<h5 class="card-title">Funcionario</h5>
+									<p class="card-text">Clique no botão para mostrar as informações.</p>
+									<a href="src/main/resources/templates/veiculo.html"
+										class="btn btn-primary">Funcionario</a>
 								</div>
 							</div>
+
+							<div class="card" style="width: 18rem;">
+								<img src=".../static/images/carro.jpg" class="card-img-top"
+									alt="...">
+								<div class="card-body">
+									<h5 class="card-title"> Morador</h5>
+									<p class="card-text">Clique no botão para mostrar as informações
+									.</p>
+									<a href=".../morador.html"
+										class="btn btn-primary">Morador</a>
+								</div>
+							</div>
+							
+							<div class="card" style="width: 18rem;">
+								<img src=".../static/images/carro.jpg" class="card-img-top"
+									alt="...">
+								<div class="card-body">
+									<h5 class="card-title"> Veiculo</h5>
+									<p class="card-text">Clique no botão para mostrar as informações.</p>
+									<a href="src/main/resources/templates/veiculo.html"
+										class="btn btn-primary">veiculo</a>
+								</div>
+							</div>
+							
+							<div class="card" style="width: 18rem;">
+								<img src=".../static/images/carro.jpg" class="card-img-top"
+									alt="...">
+								<div class="card-body">
+									<h5 class="card-title">funcionario</h5>
+									<p class="card-text">Clique no botão para mostrar as informações.</p>
+									<a href="src/main/resources/templates/veiculo.html"
+										class="btn btn-primary">funcionario</a>
+								</div>
+							</div>
+							
+							<div class="card" style="width: 18rem;">
+								<img src=".../static/images/carro.jpg" class="card-img-top"
+									alt="...">
+								<div class="card-body">
+									<h5 class="card-title">funcionario</h5>
+									<p class="card-text">Clique no botão para mostrar as informações</p>
+									<a href="src/main/resources/templates/veiculo.html"
+										class="btn btn-primary">funcionario</a>
+								</div>
+							</div>
+							
 						</div>
-	    			</div>	    			
-    			</div>
-	      	
-	      	</div>
+						<p>
+						<p>
+						<div class="row">
+						
+							<div class="card" style="width: 18rem;">
+								<img src=".../static/images/carro.jpg" class="card-img-top"
+									alt="...">
+								<div class="card-body">
+									<h5 class="card-title">funcionario</h5>
+									<p class="card-text">Clique no botão para mostrar as informações</p>
+									<a href="src/main/resources/templates/veiculo.html"
+										class="btn btn-primary">funcionario</a>
+								</div>
+							</div>
+							
+							<div class="card" style="width: 18rem;">
+								<img src=".../static/images/carro.jpg" class="card-img-top"
+									alt="...">
+								<div class="card-body">
+									<h5 class="card-title">funcionario</h5>
+									<p class="card-text">Clique no botão para mostrar as informações</p>
+									<a href="src/main/resources/templates/veiculo.html"
+										class="btn btn-primary">cadastrar</a>
+								</div>
+							</div>
+							
+							<div class="card" style="width: 18rem;">
+								<img src=".../static/images/carro.jpg" class="card-img-top"
+									alt="...">
+								<div class="card-body">
+									<h5 class="card-title">funcionario</h5>
+									<p class="card-text">Clique no botão para mostrar as informações</p>
+									<a href="src/main/resources/templates/veiculo.html"
+										class="btn btn-primary">funcionario</a>
+								</div>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+
 		</div>
-	</body>
+	</div>
+</body>
 </html>
